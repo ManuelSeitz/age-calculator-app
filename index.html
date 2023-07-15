@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <main class="main">
+    <form action="#" class="form">
+      <div class="date_container">
+        <label for="day_input" class="day_label date_label">Day</label>
+        <input type="number" name="day" id="day_input" placeholder="DD" maxlength="2" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <p class="day_p required"></p>
+      </div>
+      <div class="date_container">
+        <label for="month_input" class="month_label date_label">Month</label>
+        <input type="number" name="month" id="month_input" placeholder="MM" maxlength="2" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <p class="month_p required"></p>
+      </div>
+      <div class="date_container">
+        <label for="year_input" class="year_label date_label">Year</label>
+        <input type="number" name="year" id="year_input" placeholder="YYYY" maxlength="4" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        <p class="year_p required"></p>
+      </div>
+    </form>
+    <div class="line">
+      <hr>
+      <button type="submit" class="arrow_btn">
+        <img src="assets/images/icon-arrow.svg" alt="Arrow">
+      </button>
+    </div>
+    <h1>
+      <span class="data_container">
+        <span class="numbers" id="year_number">--</span>
+        <span id="years_word">years</span>
+      </span>
+      <span class="data_container">
+        <span class="numbers" id="months_number">--</span>
+        <span id="months_word">months</span>
+      </span>
+      <span class="data_container">
+        <span class="numbers" id="days_number">--</span>
+        <span id="days_word">days</span>
+    </h1>
+  </main>
+  <script src="app.js"></script>
+
+  <!-- 486px Height mobile -->
+
+  <!-- 651px Height desktop -->
+  <!-- 840px Width desktop -->
+
+</body>
+</html>
